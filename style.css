@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Стили для основного макета */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+/* Тёмная тема */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+.dark-theme nav ul li a {
+    color: #ffffff;
+}
+
+.dark-theme section {
+    background-color: #333333;
+}
+
+.dark-theme footer {
+    background-color: #1e1e1e;
+}
+/* Стили для галереи */
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+/* Анимация для кнопок */
+button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Меняем цвет кнопки при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки */
+}
+
+/* Анимация для ссылок в меню */
+nav ul li a {
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Меняем цвет ссылки при наведении */
+}
+/* Начальное состояние для анимации */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Состояние для отображения */
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+#reviews {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#review-list {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.review-item {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#review-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review-form input, #review-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Стили для раздела Отзывы */
+#reviews {
+    background-color: #f4f4f4; /* Светлый фон для белой темы */
+    color: #333; /* Тёмный текст для белой темы */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Стили для тёмной темы */
+.dark-theme #reviews {
+    background-color: #333; /* Тёмный фон для тёмной темы */
+    color: #f4f4f4; /* Светлый текст для тёмной темы */
+}
+/* Стили для формы отзыва */
+#reviewForm {
+    margin-top: 20px;
+}
+
+#reviewForm input,
+#reviewForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#reviewForm button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Стили для списка отзывов */
+.review {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой медицинский сайт</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мой медицинский сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+<section id="home" class="fade-in-section">
+    <!-- Содержимое раздела "Главная" -->
+</section>
+                <li><a href="#blog">Блог</a></li>
+<section id="blog" class="fade-in-section">
+    <!-- Содержимое раздела Блог -->
+</section>
+                <li><a href="#presentations">Презентации</a></li>
+<section id="presentations" class="fade-in-section">
+    <!-- Содержимое раздела "Презентации" -->
+</section>
+ <li><a href="#contact">Контакты</a></li>
+<section id="reviews" class="fade-in-section">
+    
+            </ul>
+        </nav>
+ <button onclick="toggleTheme()">Переключить тему</button>
+    </header>
+    <section id="home">
+        <h2>Добро пожаловать!</h2>
+        <p>Здесь я делюсь знаниями и материалами по медицине.</p>
+    </section>
+    <section id="blog">
+        <h2>Блог</h2>
+ <p id="date"></p>
+        <p>Последние статьи о медицине и полезные советы.</p>
+    </section>
+    <section id="presentations">
+        <h2>Презентации</h2>
+        <p>Здесь можно скачать презентации по медицине.</p>
+<div class="gallery">
+            </section>
+    <footer>
+        <p>&copy; 2024 Мой медицинский сайт</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+<section id="contact" class="fade-in-section">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами, если у вас есть вопросы или предложения.</p>
+    
+    <form id="contact-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+<section id="reviews" class="fade-in-section">
+    <h2>Отзывы</h2>
+    <div id="review-list">
+        <!-- Здесь будут отображаться отзывы -->
+    </div>
+
+    <form id="review-form">
+        <label for="review-name">Ваше имя:</label>
+        <input type="text" id="review-name" name="review-name" required>
+
+        <label for="review-message">Ваш отзыв:</label>
+        <textarea id="review-message" name="review-message" required></textarea>
+
+        <button type="submit">Оставить отзыв</button>
+    </form>
+</section>
