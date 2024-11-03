@@ -234,4 +234,42 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+.heart {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+strong {
+    color: #333;
+}
 
